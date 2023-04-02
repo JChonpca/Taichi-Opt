@@ -1,7 +1,7 @@
 import taichi as ti
 import taichi.math as tm
 
-ti.init(arch=ti.cuda, default_fp=ti.f32, debug=True, kernel_profiler=True)
+ti.init(arch=ti.cuda, default_fp=ti.f32, debug=True, kernel_profiler=True,device_memory_fraction=0.9)
 
 
 @ti.kernel
